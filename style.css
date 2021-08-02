@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+}
+
+.header-text {
+    text-align: center;
+    padding: 20px;
+    font-family: cursive;
+}
+
+.main {
+    width: 100%;
+    max-width: 800px;
+    margin: 120px auto;
+    border-radius: 5px;
+    position: relative;
+    padding: 25px;
+}
+
+.main .inputfield{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    column-gap: 5px;
+}
+
+.inputfield input{
+    width: 80%;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    padding: 8px;
+    outline: none;
+
+}
+
+.action-button {
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    min-width: fit-content;
+    text-transform: uppercase;
+}
+.delete{
+    background-color:#c62828;
+}
+.add{
+    background-color:#0d47a1;
+}
+/* .inputfield button .active{
+    opacity: 1;
+    pointer-events: auto;
+} */
+
+.main .todolist{
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 0.5rem;
+}
+
+.todolist li {
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    background-color: #f2f2f2;
+    border-radius: 0.25rem;
+    padding: 0 15px;
+    overflow: hidden;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px 0px #c9c9c9;
+    margin: 0.5rem 0;
+}
+
+.delete-item {
+    color: #fff;
+}
+
+.todolist  li span{
+    position: absolute;
+    right: -45px;
+    width: 45px;
+    text-align: center;
+    background-color: #c62828;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.todolist li:hover span{
+    right: 0px;
+}
+.main .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+}
+.footer button{
+    width: 80px;
+    background-color:darkviolet;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    padding: 6px 10px;
+
+}
+
+    
